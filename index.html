@@ -3,16 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-		<title>reveal.js</title>
-
+		<title>カラオケ</title>
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
-
-		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
-
-		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
 			link.rel = 'stylesheet';
@@ -24,139 +18,31 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-markdown
-				data-separator="\n---\n$" 
-				data-vertical="\n--\n">
-						<script type="text/template">
-
-
-## カラオケ
-
-Note:
-
-カラオケについて語りたい
-
----
-
-### カラオケ大好き
-
-Note:
-
-月二回はヒトカラするくらいには
-
----
-
-### 私の超個人的な<br>お気に入り曲
-
-Note:
-
-について今回は話していこうかと
-
----
-
-<!-- .slide: data-background="png/welove_tank-top_vi.png" -->
-
-### ヤバイTシャツ屋さん <!-- .element: style="font-color:black" -->
-
-Note:
-
-曲のタイトルと歌詞の脱力感にウケる
-
----
-
-- 週10ですき家
-- ヤバみ
-- 流行りのバンドのボーカルの男みんな声高い
-
-Note:
-
-一人暮らししたけどすき家ヤバイ
-最近の音楽界について
-
----
-
-<!-- .slide: data-background="png/midori_second.jpg" -->
-
-### ミドリ <!-- .element: style="font-color:black" -->
-
----
-
-- ゆきこさん
-- エゾシカダンス
-- 愛って悲しいね
-
-Note:
-
-大阪のジュディマリと言われたりもしてた
-喉を壊すんじゃないかってくらいのシャウトがカッコいい
-ボーカルの後藤まりこさんのロリ声やデス声にシャウト、ライブパフォーマンスなど。
-コントラバスとピアノとギターボーカルの編成の時の演奏がすごい。
-ジャズにパンクロックのフュージョンを感じて、どハマりした。
-
----
-
-<!-- .slide: data-background="png/utikubi-shinmai.jpg" -->
-
-### 打首獄門同好会　<!-- .element: style="font-color:black" -->
-
----
-
-<!-- .slide: data-background="png/utikubi-kome.jpg" -->
-
-- 日本の米は世界一 <!-- .element: style="font-color:black" -->
-- TAVEMONO NO URAMI <!-- .element: style="font-color:black" -->
-- 私を二郎に連れてって <!-- .element: style="font-color:black" -->
-
----
-
-### カラオケで歌える各種CMソング
-##### ※JOY SOUND限定だけど…
-
----
-
-- サトームセン
-- 石丸電気
-- 富士サファリパーク
-- Hello Sofmap World
-
----
-
-### どんな感じでいつも曲を探してるの?
-
----
-
-- ニコニコのまとめ動画
-- Youtubeの関連動画から
-- Mステ、CDTV音楽番組
-- CMソング、ドラマ主題歌
-- etc...
-
-Note:
-
-動画サイトなどのアップテンポな曲まとめや、
-好きな曲の関連動画から辿って行ったり。
-一時期はJOYSOUNDの最新配信曲を毎日チェックしたりもしたり
-この曲を歌っている人は他にこの曲も歌っています
-
-</script>
-				</section>
+				<section data-markdown="markdown/karaoke.md"></section>
 			</div>
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
-
 		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
+			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
+				controls: true,
+				history: true,
+				slideNumber: 'c/t',
+				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
+			});
+			Reveal.configure({
+				keyboard: {
+					37: 'prev',
+					39: 'next'
+			    }
 			});
 		</script>
 	</body>
